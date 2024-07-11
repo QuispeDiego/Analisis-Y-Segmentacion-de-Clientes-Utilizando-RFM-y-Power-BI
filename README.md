@@ -39,9 +39,8 @@ Los datos fueron dados a traves de una base de datos dada por la universidad UPC
 - **Paso 1** : Conectarse a la base de datos por medio de SQL Server management Studio.
 - **Paso 2** : Se genera la tabla RFM que contiene las columnas de Grupo Monetary y Grupo Recency. Ademas,cada uno con su id_cliente y codemes de ejecucion al cual pertenece.
 
-![dtink_5](https://github.com/QuispeDiego/Analisis-Y-Segmentacion-de-Clientes-Utilizando-RFM-y-Power-BI/assets/89101133/90a3bff1-2520-42ea-aa8b-491e81dad79a)
-
 Se ejecuta el siguiente query:
+
         DECLARE @MaxFecha DATE;
 
         SELECT @MaxFecha = MAX(FECHA)
@@ -83,6 +82,8 @@ Resultado de la tabla RFM:
 
 - **Paso 4** : Se realizan las conexiones entre las diferentes tablas, para asi mejorar la visualizacion de los datos. Estas tablas son: FACT_RECARGA_CLIENTE_DIARIO, FACT_VENTANETA_CLIENTE_DIARIO, MAESTRO_CLIENTE, MAESTRO_MEDIO_PAGO, MAESTRO_PRODUCTO y RFM.
 Y su conexion se ve de la siguiente manera:
+
+![dtink_5](https://github.com/QuispeDiego/Analisis-Y-Segmentacion-de-Clientes-Utilizando-RFM-y-Power-BI/assets/89101133/90a3bff1-2520-42ea-aa8b-491e81dad79a)
 
 - **Paso 5** : Crear las siguientes 5 métricas:
 
